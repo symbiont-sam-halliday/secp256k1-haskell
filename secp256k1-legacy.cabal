@@ -1,12 +1,12 @@
-name:                secp256k1
+name:                secp256k1-legacy
 version:             0.5.4
-synopsis:            Bindings for secp256k1 library from Bitcoin Core
-description:         Please see README.md
-homepage:            http://github.com/haskoin/secp256k1-haskell#readme
+synopsis:            fork of secp256k1
+description:         Keep the 0.5.x branch of secp256k1 on life support for those of us who can't upgrade to secp256k1-haskell.
+homepage:            https://github.com/symbiont-sam-halliday/secp256k1-haskell
 license:             PublicDomain
 license-file:        UNLICENSE
 author:              Jean-Pierre Rupp
-maintainer:          xenog@protonmail.com
+maintainer:          sam.halliday@symbiont.io
 copyright:           (c) 2017 Jean-Pierre Rupp
 category:            Crypto
 build-type:          Custom
@@ -131,7 +131,7 @@ test-suite secp256k1-test
                        , HUnit
                        , mtl
                        , QuickCheck
-                       , secp256k1
+                       , secp256k1-legacy
                        , string-conversions
                        , test-framework ^>= 0.8.2.0
                        , test-framework-hunit ^>= 0.3.0.2
@@ -141,7 +141,7 @@ test-suite secp256k1-test
 
 source-repository head
     type:     git
-    location: https://github.com/haskoin/secp256k1-haskell.git
+    location: https://github.com/symbiont-sam-halliday/secp256k1-haskell.git
 
 custom-setup
     setup-depends:       base >= 4.8 && < 5
