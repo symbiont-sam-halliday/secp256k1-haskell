@@ -1,5 +1,5 @@
 name:                secp256k1-legacy
-version:             0.5.5
+version:             0.5.6
 synopsis:            fork of secp256k1
 description:         Keep the 0.5.x branch of secp256k1 on life support for those of us who can't upgrade to secp256k1-haskell.
 homepage:            https://github.com/symbiont-sam-halliday/secp256k1-haskell
